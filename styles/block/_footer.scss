@@ -1,0 +1,38 @@
+.footer {
+    padding: 36px 0;
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        margin-right: 1em;
+    }
+
+    &__navigation {
+        display: flex;
+        align-items: center;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        text-transform: uppercase;
+    }
+
+    &__link {
+        padding: 16px;
+
+        &:hover,
+        &:focus {
+            color: rgba(#fff, 0.5);
+        }
+    }
+
+    &__registration {
+        margin-left: 24px;
+    }
+}
