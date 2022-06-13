@@ -1,0 +1,14 @@
+.button {
+    padding: 16px 32px;
+    border: 1px solid currentColor;
+    border-radius: 8px;
+    color: #fff;
+    background-color: transparent;
+    cursor: pointer;
+    text-transform: uppercase;
+
+    &:hover,
+    &:focus {
+        color: rgba(#fff, 0.5);
+    }
+}
