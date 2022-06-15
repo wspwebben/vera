@@ -1,7 +1,7 @@
 @use '../variables';
 
 .container {
-  max-width: variables.$container-width;
-  padding: 0 20px;
+  max-width: variables.$container-width + variables.$container-gap * 2;
+  padding: 0 variables.$container-gap;
   margin: 0 auto;
 }
