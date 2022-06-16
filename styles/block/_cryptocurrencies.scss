@@ -1,17 +1,24 @@
+// Required Core Stylesheet
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
+
+// Optional Theme Stylesheet
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.theme";
+
 .cryptocurrencies {
     min-height: 760px;
     padding-top: 192px;
     padding-bottom: 70px;
 
     &__title {
-        margin-bottom: 126px;
+        margin-bottom: 100px;
     }
 
     &__slider {
-        display: flex;
-        align-items: center;
         margin-bottom: 60px;
-        object-fit: contain;
+    }
+
+    &__coins {
+        align-items: center;
     }
 
     &__container {
