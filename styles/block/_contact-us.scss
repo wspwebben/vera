@@ -1,0 +1,41 @@
+.contact-us {
+    min-height: 730px;
+    padding-top: 192px;
+    padding-bottom: 70px;
+    background-image: url('../images/contact-background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__title {
+        margin-bottom: 180px;
+    }
+
+    &__list {
+        display: flex;
+        gap: 20px;
+    }
+
+    &__item {
+        flex-grow: 1;
+        text-align: center;
+    }
+
+    &__caption {
+        color: rgba(#f0f6fb, 0.5);
+        font-size: 13px;
+        line-height: 16px;
+        font-weight: 500;
+    }
+
+    &__contact {
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 1.55;
+        text-transform: none;
+        background: linear-gradient(89.24deg, #E64CFF 0%, #FF30D9 14.33%, #FF1EB2 28.53%, #FF2E8C 42.93%, #FF4A6A 57.14%, #FF654C 71.44%, #FF7E32 85.74%, #F7931A 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+    }
+}
