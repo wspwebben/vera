@@ -1,0 +1,27 @@
+.cryptocurrencies {
+    min-height: 760px;
+    padding-top: 192px;
+    padding-bottom: 70px;
+
+    &__title {
+        margin-bottom: 126px;
+    }
+
+    &__slider {
+        display: flex;
+        align-items: center;
+        margin-bottom: 60px;
+        object-fit: contain;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__slogan {
+        margin-top: 0;
+        margin-bottom: 24px;
+    }
+}
