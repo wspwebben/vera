@@ -41,4 +41,32 @@
     //     background-image: url('../images/section-title.png');
     //     background-repeat: no-repeat;
     // }
+
+    &--center {
+        .section-title__lines {
+            width: auto;
+            gap: 20px;
+            padding: 0 12px;
+
+            &--reversed {
+                .section-title__line {
+
+                    @for $i from 1 to 5 {
+                        &:nth-child(#{$i}) {
+                            opacity: 1.1 - 0.2 * $i;
+                        }
+                    }
+                }
+            }
+        }
+
+        .section-title__line {
+
+            @for $i from 1 to 5 {
+                &:nth-child(#{$i}) {
+                    opacity: 0.2 * $i - 0.1;
+                }
+            }
+        }
+    }
 }

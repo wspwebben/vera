@@ -1,6 +1,7 @@
 .button {
     --button-vertical-padding: 24px;
 
+    display: inline-block;
     padding: var(--button-vertical-padding) 32px;
     border-radius: 8px;
     cursor: pointer;
