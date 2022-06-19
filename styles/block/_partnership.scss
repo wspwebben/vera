@@ -1,13 +1,23 @@
 .partnership {
+    position: relative;
     min-height: 900px;
     padding-top: 192px;
     padding-bottom: 156px;
-    background-image: url('../images/partnership-bg.png');
-    background-color: #000;
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    background-size: cover;
-    background-position: top left;
+    
+    &::before {
+        content: "";
+        position: absolute;
+        left: -1300px;
+        top: -110vh;
+        // TODO: optimize image
+        width: 2400px;
+        height: 2600px;
+        
+        background-image: url('../images/background/partnership.png');
+        background-repeat: no-repeat;
+        // background-position: center right;
+        background-size: contain;
+    }
     
     &__title {
         margin-bottom: 56px;
