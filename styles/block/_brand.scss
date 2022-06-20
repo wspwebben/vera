@@ -6,6 +6,7 @@
 
     &__background {
         position: relative;
+        pointer-events: none;
         
         &::before {
             content: "";

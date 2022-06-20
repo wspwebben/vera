@@ -6,6 +6,7 @@
     
     &::before {
         content: "";
+        pointer-events: none;
         position: absolute;
         left: -1300px;
         top: -110vh;
@@ -15,7 +16,6 @@
         
         background-image: url('../images/background/partnership.png');
         background-repeat: no-repeat;
-        // background-position: center right;
         background-size: contain;
     }
     
@@ -50,6 +50,8 @@
         min-width: 265px;
         min-height: 265px;
         margin-bottom: 32px;
+        pointer-events: none;
+        user-select: none;
 
         &::before {
             content: "";
