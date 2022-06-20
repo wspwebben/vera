@@ -1,0 +1,7 @@
+<svg width="88" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M6.17 16 .77 0h1.06l5.4 16H6.16Z" fill="#D9D9D9" opacity=".1"/>
+  <path d="m26.17 16-5.4-16h1.06l5.4 16h-1.06Z" fill="#D9D9D9" opacity=".3"/>
+  <path d="m46.17 16-5.4-16h1.06l5.4 16h-1.06Z" fill="#D9D9D9" opacity=".5"/>
+  <path d="m66.17 16-5.4-16h1.06l5.4 16h-1.06Z" fill="#D9D9D9" opacity=".7"/>
+  <path d="m86.17 16-5.4-16h1.06l5.4 16h-1.06Z" fill="#D9D9D9" opacity=".9"/>
+</svg>

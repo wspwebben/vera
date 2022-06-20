@@ -2,71 +2,41 @@
 
 .section-title {
     position: relative;
-    display: flex;
     font-size: 13px;
     font-weight: 400;
-    // padding-left: calc((100vw - #{variables.$container-width}) / 2);
 
-    &__lines {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: calc((100vw - #{variables.$container-width}) / 2);
-        padding-right: 12px;
+    &::before {
+        content: "";
+        position: absolute;
+        right: 100%;
+        width: 168px;
+        height: 16px;
+        margin-right: 12px;
+        background-image: url('../images/title-long.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
     }
-
-    &__line {
-        width: 1px;
-        height: 100%;
-        background-color: #d9d9d9;
-        transform: rotate(-20deg);
-
-        @for $i from 1 to 10 {
-            &:nth-child(#{$i}) {
-                opacity: 0.1 * $i;
-            }
-        }
-    }
-
-    // &::before {
-    //     content: "";
-    //     position: absolute;
-    //     // width: calc((100vw - #{variables.$container-width}) / 2);
-    //     // right: 100%;
-    //     left: 0;
-    //     // width: 100%;
-    //     // width: 168px;
-    //     height: 16px;
-    //     margin-right: 12px;
-    //     background-image: url('../images/section-title.png');
-    //     background-repeat: no-repeat;
-    // }
 
     &--center {
-        .section-title__lines {
-            width: auto;
-            gap: 20px;
-            padding: 0 12px;
-
-            &--reversed {
-                .section-title__line {
-
-                    @for $i from 1 to 5 {
-                        &:nth-child(#{$i}) {
-                            opacity: 1.1 - 0.2 * $i;
-                        }
-                    }
-                }
-            }
+        &::before, &::after {
+            content: "";
+            position: absolute;
+            width: 88px;
+            height: 16px;
+            background-image: url('../images/title-short.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
         }
 
-        .section-title__line {
-
-            @for $i from 1 to 5 {
-                &:nth-child(#{$i}) {
-                    opacity: 0.2 * $i - 0.1;
-                }
-            }
+        &::before {
+            right: 100%;
+            margin-right: 12px;
+        }
+        
+        &::after {
+            left: 100%;
+            margin-left: 12px;
+            transform: rotate(180deg)
         }
     }
 }
