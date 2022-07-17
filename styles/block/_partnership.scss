@@ -1,23 +1,8 @@
 .partnership {
     position: relative;
-    min-height: 900px;
-    padding-top: 192px;
-    padding-bottom: 156px;
-    
-    &::before {
-        content: "";
-        pointer-events: none;
-        position: absolute;
-        left: -1300px;
-        top: -110vh;
-        width: 2400px;
-        height: 2600px;
-        
-        background-image: url('../images/background/partnership.png');
-        background-repeat: no-repeat;
-        background-size: contain;
-    }
-    
+    padding-top: 52px;
+    padding-bottom: 64px;
+
     &__title {
         margin-bottom: 56px;
     }
@@ -30,9 +15,9 @@
 
     &__list {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
         gap: 20px;
-        margin-bottom: 52px;
+        margin-bottom: 50px;
     }
 
     &__item {
@@ -42,12 +27,12 @@
     }
 
     &__image-wrapper {
+        --partnership-image-bg-size: 240px;
+        --partnership-image-size: 135px;
+
         position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        min-width: 265px;
-        min-height: 265px;
+        min-width: var(--partnership-image-bg-size);
+        min-height: var(--partnership-image-bg-size);
         margin-bottom: 32px;
         pointer-events: none;
         user-select: none;
@@ -57,31 +42,35 @@
             position: absolute;
             top: 0;
             left: 0;
-            width: 265px;
-            height: 265px;
+            width: var(--partnership-image-bg-size);
+            height: var(--partnership-image-bg-size);
             background-image: url('../images/partnership/item-bg.png');
             background-repeat: no-repeat;
             background-position: center;
             background-size: contain;
-            transform: rotate(42deg);
+            // transform: rotate(42deg);
         }
     }
 
     &__image {
-        position: relative;
-        width: 150px;
-        height: 150px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: var(--partnership-image-size);
+        height: var(--partnership-image-size);
+        transform: translate(-50%, -50%);
     }
 
     &__item-title {
         margin: 0;
-        font-size: 18px;
+        font-size: 16px;
+        line-height: 1.25;
         color: rgba(#f0f6fb, 50%);
     }
 
     &__item-accent {
         color: #f0f6fb;
-        font-size: 24px;
+        font-size: 22px;
         line-height: 1.66;
     }
 

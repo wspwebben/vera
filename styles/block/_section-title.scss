@@ -27,4 +27,33 @@
             background-size: contain;
         }
     }
+
+    &--center {
+        display: flex;
+        align-items: flex-start;
+        max-width: 65%;
+        width: fit-content;
+        text-align: center;
+
+        &::before, &::after {
+            content: "";
+            position: absolute;
+            width: 88px;
+            height: 16px;
+            background-image: url('../images/title-short.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        &::before {
+            right: 100%;
+            margin-right: 12px;
+        }
+        
+        &::after {
+            left: 100%;
+            margin-left: 12px;
+            transform: rotate(180deg)
+        }
+    }
 }
