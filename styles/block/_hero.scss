@@ -1,44 +1,28 @@
+@use '../mixin';
+
 .hero {
     position: relative;
-    min-height: 860px;
-    padding-top: 192px;
-    padding-bottom: 156px;
-
-    &::before {
-        content: "";
-        position: absolute;
-        top: 30%;
-        left: -2%;
-        z-index: -1;
-        width: 370px;
-        height: 360px;
-        pointer-events: none;
-
-        background-image: url('../images/background/hero/lines.svg');
-        background-repeat: no-repeat;
-        background-size: contain;
-    }
+    padding-top: 104px;
+    padding-bottom: 64px;
 
     &::after {
         content: "";
         position: absolute;
         z-index: -1;
         top: 0;
-        bottom: 0;
         right: 0;
-        width: 51vw;
-        height: 105vh;
+        width: 100%;
+        height: 110%;
         pointer-events: none;
         
-        background-image: url('../images/background/hero/image.png');
+        background-image: url('../images/background/hero/image-mobile.png');
         background-repeat: no-repeat;
+        background-position: right;
         background-size: contain;
-        background-position: right center;
     }
 
     &__title {
-        margin-top: 0;
-        margin-bottom: 92px;
+        margin-bottom: 52px;
     }
 
     &__heading {
@@ -48,63 +32,26 @@
         margin-bottom: 32px;
 
         font-weight: 700;
-        font-size: 106px;
+        font-size: 34px;
         line-height: 1.3;
         letter-spacing: 0.08em;
         text-transform: uppercase;
     }
 
     &__heading-text {
-        position: relative;
-
-        &::before,
-        &::after {
-            content: '';
-            position: absolute;
-            left: 100%;
-            top: 0;
-            bottom: 0;
-            margin: auto;
-            margin-left: 10px;
-            width: 278px;
-            height: 76px;
-            background-image: url('../images/heading.svg');
-            background-size: contain;
-            background-repeat: no-repeat;
-        }
-
-        &::after {
-            top: 15px;
-            margin-left: 10px;
-            opacity: 0.2;
-        }
-    }
-
-    &__shadow {
-        position: absolute;
-        top: 10px;
-        left: 0;
-        color: rgba(#F0F6FB, 0.2);
-        -webkit-text-fill-color: transparent;
-        -webkit-text-stroke: 1px;
-    }
-
-    &__content {
-        width: 66%;
-        margin: 0 auto;
+        display: block;
     }
 
     &__text {
-        margin-top: 0;
-        margin-bottom: 52px;
-
         font-weight: 500;
-        font-size: 18px;
-        line-height: 2.25;
+        font-size: 15px;
+        line-height: 2.4;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #F0F6FB;
     }
 
-    &__actions {
-        display: flex;
-        gap: 24px;
+    &__secondary-action {
+        display: none;
     }
 }
