@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page" lang="en">
+<html class="page no-js" lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,18 +17,21 @@
   <link rel="stylesheet" href="styles/index.scss">
 </head>
 <body class="page__body">
-  <header class="header">
+  <header class="header js-header">
     <div class="header__container container">
       <img class="header__logo" src="images/logo.svg" alt="Vera Casino">
-      <nav class="header__navigation">
-        <ul class="header__list">
-          <li class="header__item"><a class="header__link" href="#partnership">Partnership</a></li>
-          <li class="header__item"><a class="header__link" href="#brand">Brand</a></li>
-          <li class="header__item"><a class="header__link" href="#cryptocurrencies">Cryptocurrencies</a></li>
-          <li class="header__item"><a class="header__link" href="#contact-us">Contact us</a></li>
-          <li class="header__item"><a class="header__link" href="https://affiliate.gspin.partners/partner/login?redirect=/partner/login%20(https://affiliate.gspin.partners/partner/login)">Sign in</a></li>
-        </ul>
-        <a class="header__registration button button--outline button--small" href="https://affiliate.gspin.partners/partner/register">Sign up</a>
+      <button type="button" class="header__menu-button js-header__menu-trigger" aria-expanded="false" aria-label="Open menu" hidden></button>
+      <nav class="header__navigation js-header__navigation">
+        <div class="header__navigation-container container">
+          <ul class="header__list">
+            <li class="header__item"><a class="header__link" href="#partnership">Partnership</a></li>
+            <li class="header__item"><a class="header__link" href="#brand">Brand</a></li>
+            <li class="header__item"><a class="header__link" href="#cryptocurrencies">Cryptocurrencies</a></li>
+            <li class="header__item"><a class="header__link" href="#contact-us">Contact us</a></li>
+            <li class="header__item"><a class="header__link" href="https://affiliate.gspin.partners/partner/login?redirect=/partner/login%20(https://affiliate.gspin.partners/partner/login)">Sign in</a></li>
+          </ul>
+          <a class="header__registration button button--outline button--small" href="https://affiliate.gspin.partners/partner/register">Sign up</a>
+        </div>
       </nav>
     </div>
   </header>
@@ -191,6 +194,6 @@
       </div>
     </div>
   </footer>
-  <script src="script.js"></script>
+  <script src="script/main.js"></script>
 </body>
 </html>
