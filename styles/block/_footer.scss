@@ -2,11 +2,8 @@
     background-color: #040404;
 
     &__container {
-        padding-top: 36px;
-        padding-bottom: 36px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        padding-top: 32px;
+        padding-bottom: 32px;
     }
 
     &__logo {
@@ -14,19 +11,15 @@
     }
 
     &__navigation {
-        display: flex;
-        align-items: center;
-    }
-
-    &__list {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        text-transform: uppercase;
+        margin-top: 32px;
     }
 
     &__link {
-        padding: 16px;
+        $horizontal-padding: 8px;
+
+        display: block;
+        margin-left: -$horizontal-padding;
+        padding: 16px $horizontal-padding;
 
         &:hover,
         &:focus {
