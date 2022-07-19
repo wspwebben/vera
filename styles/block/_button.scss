@@ -1,12 +1,15 @@
+@use '../mixin';
+
 .button {
-    --button-vertical-padding: 24px;
+    --button-vertical-padding: 16px;
+    --button-horizontal-padding: 24px;
 
     display: inline-block;
-    padding: var(--button-vertical-padding) 32px;
+    padding: var(--button-vertical-padding) var(--button-horizontal-padding);
     border-radius: 8px;
     cursor: pointer;
     font-size: 13px;
-    line-height: 16px;
+    line-height: 1.25;
 
     &--primary {
         background: linear-gradient(98.39deg, #E64CFF 0%, #970FAD 100%);
@@ -27,9 +30,5 @@
         &:focus {
             color: rgba(#F0F6FB, 0.5);
         }
-    }
-
-    &--small {
-        --button-vertical-padding: 16px;
     }
 }
