@@ -39,8 +39,7 @@
     }
 
     &__converter-text {
-        display: block;
-
+        white-space: nowrap;
 
         &:nth-child(1)::after,
         &:nth-child(2)::before {
