@@ -3,6 +3,35 @@
     padding-top: 52px;
     padding-bottom: 64px;
 
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: -1;
+    }
+
+    &::before {
+        top: -130px;
+        left: -850px;
+        width: 986px;
+        height: 1190px;
+        background-image: url('../images/background/mobile/triangle-filled.svg');
+        transform: rotate(160deg);
+        opacity: 0.05;
+    }
+
+    &::after {
+        top: 450px;
+        left: -330px;
+        width: 1200px;
+        height: 1200px;
+        background-image: url('../images/background/mobile/triangle-single.svg');
+        transform: rotate(100deg);
+        opacity: 0.1;
+    }
+
     &__title {
         margin-bottom: 56px;
     }
