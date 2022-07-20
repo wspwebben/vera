@@ -3,6 +3,20 @@
     padding-top: 72px;
     padding-bottom: 128px;
 
+    &::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        bottom: -150px;
+        right: 0;
+        width: 320px;
+        height: 640px;
+        background-image: url('../images/background/brand/image-mobile.png');
+        background-size: contain;
+        background-position: right center;
+        background-repeat: no-repeat;
+    }
+
     &__title {
         margin-bottom: 72px;
     }
