@@ -36,10 +36,18 @@
         line-height: 1.3;
         letter-spacing: 0.08em;
         text-transform: uppercase;
-    }
 
-    &__heading-text {
-        display: block;
+
+        &::after {
+            content: "";
+            display: inline-block;
+            vertical-align: middle;
+            width: 83px;
+            height: 26px;
+            background-image: url('../images/hero-heading-mobile.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
     }
 
     &__text {
