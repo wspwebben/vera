@@ -1,45 +1,105 @@
+@use '../mixin';
+
 .contact-us {
     position: relative;
     padding-top: 72px;
     padding-bottom: 110px;
 
+    @include mixin.media('tablet') {
+        padding-top: 192px;
+        padding-bottom: 82px;
+    }
+
     &__background {
 
-        &::before,
-        &::after {
+        &::before {
+            @include mixin.media('tablet') {
+                content: "";
+                position: absolute;
+                left: 650px;
+                bottom: -405px;
+                width: 980px;
+                height: 1190px;
+                background-image: url('../images/background/tablet/triangle-colored.svg');
+                transform: rotate(42deg);
+                opacity: 0.8;
+            }
+        }
+    }
+
+    &__left-image {
+        &::before {
             content: "";
             position: absolute;
+            left: -740px;
+            bottom: -470px;
+            width: 980px;
+            height: 1190px;
+            background-image: url('../images/background/mobile/triangle-single.svg');
             background-repeat: no-repeat;
             background-size: cover;
             opacity: 0.2;
+            transform: rotate(162deg);
+            
+            @include mixin.media('tablet') {
+                bottom: -160px;
+                left: -520px;
+            }
         }
+    }
+
+    &__center-image {
 
         &::before {
-            left: -740px;
-            bottom: -470px;
-            width: 985px;
-            height: 1189px;
-            background-image: url('../images/background/mobile/triangle-single.svg');
-            transform: rotate(160deg);
-        }
-
-        &::after {
+            content: "";
+            position: absolute;
             right: -215px;
             bottom: -470px;
             width: 630px;
             height: 620px;
             background-image: url('../images/background/mobile/triangle-repeated.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: 0.2;
+
+            @include mixin.media('tablet') {
+                bottom: -160px;
+                left: 130px;
+                background-image: url('../images/background/tablet/contact-us/center.png');
+            }
         }
     }
 
     &__title {
         margin-bottom: 52px;
+        
+        @include mixin.media('tablet') {
+            margin-bottom: 160px;
+        }
     }
 
+    &__list {
+        @include mixin.media('tablet') {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px 20px;
+        }
+    }
+    
     &__item {
         margin-bottom: 60px;
 
         &:last-child {
+            margin-bottom: 0;
+        }
+
+        @include mixin.media('tablet') {
+            flex-basis: 30%;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             margin-bottom: 0;
         }
     }
