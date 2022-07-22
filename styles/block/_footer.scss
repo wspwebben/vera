@@ -1,9 +1,21 @@
+@use '../mixin';
+
 .footer {
     background-color: #040404;
 
     &__container {
-        padding-top: 32px;
-        padding-bottom: 32px;
+        --padding: 32px;
+
+        padding-top: var(--padding);
+        padding-bottom: var(--padding);
+        
+        @include mixin.media('tablet') {
+            --padding: 26px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
     }
 
     &__logo {
@@ -11,19 +23,37 @@
     }
 
     &__navigation {
-        margin-top: 32px;
+        @include mixin.media('tablet', 'to') {
+            margin-top: 32px;
+        }
+    }
+
+    &__list {
+        --link-padding: 8px;
+
+        @include mixin.media('tablet') {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            margin-right: calc(-1* var(--link-padding));;
+        }
     }
 
     &__link {
-        $horizontal-padding: 8px;
-
         display: block;
-        margin-left: -$horizontal-padding;
-        padding: 16px $horizontal-padding;
+        margin-left: calc(-1* var(--link-padding));
+        padding: 16px var(--link-padding);
 
         &:hover,
         &:focus {
             color: rgba(#fff, 0.5);
+        }
+
+        @include mixin.media('tablet') {
+            --link-padding: 15px;
+
+            margin-left: 0;
         }
     }
 

@@ -1,9 +1,26 @@
+@use '../mixin';
+
 .copyright {
+    --padding: 32px;
+
     background-color: #000;
-    padding: 32px 0;
+    padding: var(--padding) 0;
     
     font-weight: 500;
     color: rgba(#F0F6FB, 0.2);
+
+    @include mixin.media('tablet') {
+        --padding: 24px;
+    }
+    
+    &__container {
+        @include mixin.media('tablet') {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+    }
 
     &__text {
         display: block;
