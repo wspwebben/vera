@@ -50,6 +50,10 @@
         max-width: 65%;
         text-align: center;
 
+        @include mixin.media('tablet') {
+            margin-left: 0;
+        }
+
         &::before,
         &::after {
             content: "";
