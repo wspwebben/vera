@@ -1,3 +1,4 @@
+@use '../mixin';
 @use '../colors';
 
 $header-height: 64px;
@@ -9,6 +10,10 @@ $header-height: 64px;
     width: 100%;
     padding: 16px 0;
     background-color: rgba(colors.$light-black, 0.8);
+
+    @include mixin.media('tablet') {
+        padding: 32px 0;
+    }
 
     &__logo {
         margin-right: 1em;

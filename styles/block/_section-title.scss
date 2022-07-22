@@ -28,6 +28,22 @@
         }
     }
 
+    @include mixin.media('tablet') {
+        margin-left: 132px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            right: 100%;
+            width: 168px;
+            height: 16px;
+            margin-right: 12px;
+            background-image: url('../images/title-long.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    }
+
     &--center {
         display: flex;
         align-items: flex-start;

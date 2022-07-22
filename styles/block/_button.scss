@@ -31,4 +31,9 @@
             color: rgba(#F0F6FB, 0.5);
         }
     }
+
+    @include mixin.media('tablet') {
+        --button-vertical-padding: 24px;
+        --button-horizontal-padding: 32px;
+    }
 }

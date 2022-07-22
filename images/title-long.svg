@@ -1,11 +1,11 @@
-<svg width="168" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M6.17 16 .77 0h1.06l5.4 16H6.16Z" fill="#D9D9D9" opacity=".1"/>
-  <path d="m26.17 16-5.4-16h1.06l5.4 16h-1.06Z" fill="#D9D9D9" opacity=".3"/>
-  <path d="m46.17 16-5.4-16h1.06l5.4 16h-1.06Z" fill="#D9D9D9" opacity=".4"/>
-  <path d="m66.17 16-5.4-16h1.06l5.4 16h-1.06Z" fill="#D9D9D9" opacity=".5"/>
-  <path d="m86.17 16-5.4-16h1.06l5.4 16h-1.06Z" fill="#D9D9D9" opacity=".6"/>
-  <path d="m106.17 16-5.4-16h1.06l5.4 16h-1.06Z" fill="#D9D9D9" opacity=".7"/>
-  <path d="m126.17 16-5.4-16h1.06l5.4 16h-1.06Z" fill="#D9D9D9" opacity=".8"/>
-  <path d="m146.17 16-5.4-16h1.06l5.4 16h-1.06Z" fill="#D9D9D9" opacity=".9"/>
-  <path d="m166.17 16-5.4-16h1.06l5.4 16h-1.06Z" fill="#D9D9D9"/>
+<svg width="168" height="16" fill="#D9D9D9" xmlns="http://www.w3.org/2000/svg">
+  <path d="M6.2 16 .8 0h1l5.4 16h-1Z" opacity=".1"/>
+  <path d="M26.2 16 20.8 0h1l5.4 16h-1Z" opacity=".3"/>
+  <path d="M46.2 16 40.8 0h1l5.4 16h-1Z" opacity=".4"/>
+  <path d="M66.2 16 60.8 0h1l5.4 16h-1Z" opacity=".5"/>
+  <path d="M86.2 16 80.8 0h1l5.4 16h-1Z" opacity=".6"/>
+  <path d="m106.2 16-5.4-16h1l5.4 16h-1Z" opacity=".7"/>
+  <path d="m126.2 16-5.4-16h1l5.4 16h-1Z" opacity=".8"/>
+  <path d="m146.2 16-5.4-16h1l5.4 16h-1Z" opacity=".9"/>
+  <path d="m166.2 16-5.4-16h1l5.4 16h-1Z" opacity="1"/>
 </svg>

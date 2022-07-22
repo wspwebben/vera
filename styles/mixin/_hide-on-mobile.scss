@@ -1,0 +1,7 @@
+@use './media' as *;
+
+@mixin hideOnMobile {
+    @include media('tablet', 'to') {
+        display: none;
+    }
+}
