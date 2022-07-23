@@ -20,7 +20,7 @@
                 bottom: -405px;
                 width: 980px;
                 height: 1190px;
-                background-image: url('../images/background/tablet/triangle-colored.svg');
+                background-image: url('../images/tablet/triangle-colored.svg');
                 transform: rotate(42deg);
                 opacity: 0.8;
             }
@@ -35,7 +35,7 @@
             bottom: -470px;
             width: 980px;
             height: 1190px;
-            background-image: url('../images/background/mobile/triangle-single.svg');
+            background-image: url('../images/mobile/triangle-single.svg');
             background-repeat: no-repeat;
             background-size: cover;
             opacity: 0.2;
@@ -57,7 +57,7 @@
             bottom: -470px;
             width: 630px;
             height: 620px;
-            background-image: url('../images/background/mobile/triangle-repeated.svg');
+            background-image: url('../images/mobile/triangle-repeated.svg');
             background-repeat: no-repeat;
             background-size: cover;
             opacity: 0.2;
@@ -65,7 +65,7 @@
             @include mixin.media('tablet') {
                 bottom: -160px;
                 left: 130px;
-                background-image: url('../images/background/tablet/contact-us/center.png');
+                background-image: url('../images/tablet/contact-us/center.png');
             }
         }
     }
