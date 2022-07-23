@@ -1,3 +1,4 @@
+@use '../variables';
 @use '../mixin';
 
 .brand {
@@ -29,6 +30,14 @@
             height: 1150px;
             background-image: url('../images/tablet/brand.png');
         }
+        
+        @include mixin.media('desktop') {
+            right: calc((100vw - #{variables.$desktop}) / #{((variables.$desktop - variables.$laptop) / 1px)} * 240);
+            bottom: -350px;
+            width: 1000px;
+            height: 1200px;
+            background-image: url('../images/desktop/brand.png');
+        }
     }
 
     &__title {
@@ -59,6 +68,10 @@
         @include mixin.media('tablet') {
             max-width: 75%;
         }
+
+        @include mixin.media('desktop') {
+            max-width: 530px;
+        }
     }
 
     &__converter-text {
@@ -78,10 +91,18 @@
         &:nth-child(1)::after {
             margin-left: 16px;
             transform: scaleX(-1);
+
+            @include mixin.media('desktop') {
+                display: none;
+            }
         }
 
         &:nth-child(2)::before {
             margin-right: 16px;
+            
+            @include mixin.media('desktop') {
+                background-image: url('../images/desktop/converter-arrow.svg');
+            }
         }
     }
 
