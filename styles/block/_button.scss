@@ -35,5 +35,9 @@
     @include mixin.media('tablet') {
         --button-vertical-padding: 24px;
         --button-horizontal-padding: 32px;
+
+        &--small {
+            --button-vertical-padding: 16px;
+        }
     }
 }

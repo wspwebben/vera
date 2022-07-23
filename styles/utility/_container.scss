@@ -13,4 +13,8 @@
   @include mixin.media('tablet') {
     --padding: 48px;
   }
+
+  @include mixin.media('desktop') {
+    --padding: 20px;
+  }
 }

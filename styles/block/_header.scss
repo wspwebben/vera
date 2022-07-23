@@ -1,18 +1,25 @@
 @use '../mixin';
 @use '../colors';
 
-$header-height: 64px;
-
 .header {
+    --header-height: 64px;
+    --vertical-padding: 16px;
+
     position: absolute;
     z-index: 10;
     top: 0;
     width: 100%;
-    padding: 16px 0;
+    padding: var(--vertical-padding) 0;
     background-color: rgba(colors.$light-black, 0.8);
 
     @include mixin.media('tablet') {
-        padding: 32px 0;
+        --header-height: 100px;
+
+        --vertical-padding: 26px;
+    }
+    
+    @include mixin.media('desktop') {
+        --vertical-padding: 26px;
     }
 
     &__logo {
@@ -26,69 +33,100 @@ $header-height: 64px;
     }
 
     &__menu-button {
-        $lines-gap: 10px;
+        @include mixin.media('desktop', 'to') {
+            $lines-gap: 10px;
+            $lines-width: 32px;
 
-        position: relative;
-        width: 32px;
-        height: 32px;
-        background-color: transparent;
-        border: 0;
-        padding: $lines-gap 5px;
-        color: #fff;
+            --button-size: #{$lines-width};
 
-        &::before,
-        &::after {
-            content: "";
-            position: absolute;
-            left: 0;
-            top: 50%;
-            width: 100%;
-            height: 1px;
+            position: relative;
+            width: var(--button-size);
+            height: var(--button-size);
+            background-color: transparent;
+            border: 0;
+            padding: $lines-gap 5px;
+            color: #fff;
 
-            background-color: currentColor;
-            transition: transform 0.3s;
-            transform-origin: center;
-        }
+            &::before,
+            &::after {
+                content: "";
+                position: absolute;
+                left: calc((var(--button-size) - #{$lines-width}) / 2);
+                top: 50%;
+                width: $lines-width;
+                height: 1px;
 
-        &::before {
-            transform: translateY(-$lines-gap);
-        }
+                background-color: currentColor;
+                transition: transform 0.3s;
+                transform-origin: center;
+            }
 
-        &::after {
-            transform: translateY(0px);
-            box-shadow: 0px $lines-gap 0 0 currentColor;
-        }
-
-        &[aria-expanded=true] {
             &::before {
-                transform: rotate(45deg);
+                transform: translateY(-$lines-gap);
             }
 
             &::after {
-                box-shadow: none;
-                transform: rotate(-45deg);
+                transform: translateY(0px);
+                box-shadow: 0px $lines-gap 0 0 currentColor;
             }
+
+            &[aria-expanded=true] {
+                &::before {
+                    transform: rotate(45deg);
+                }
+
+                &::after {
+                    box-shadow: none;
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+
+        @include mixin.media('tablet') {
+            --button-size: 48px;
+
+            padding: 14px 8px;
+        }
+        
+        @include mixin.media('desktop') {
+            display: none;
         }
     }
 
     &__navigation {
-        position: absolute;
-        top: $header-height;
-        right: 100%;
-        width: 100%;
-        height: calc(100vh - #{$header-height});
+        @include mixin.media('desktop', 'to') {
+            position: absolute;
+            top: var(--header-height);
+            right: 100%;
+            width: 100%;
+            height: calc(100vh - var(--header-height));
 
-        background-color: rgba(colors.$light-black, 0.8);
-        transform: translateX(0);
-        transition: transform 0.3s;
+            background-color: rgba(colors.$light-black, 0.8);
+            transform: translateX(0);
+            transition: transform 0.3s;
 
-        &[aria-expanded=true] {
-            transform: translateX(100%);
+            &[aria-expanded=true] {
+                transform: translateX(100%);
+            }
+        }
+
+        @include mixin.media('tablet') {
+            font-size: 18px;
+        }
+
+        @include mixin.media('tablet') {
+            font-size: 13px;
         }
     }
 
     &__navigation-container {
         padding-bottom: 20px;
+
+        @include mixin.media('desktop') {
+            display: flex;
+            align-items: center;
+            padding-bottom: 0;
+        }
     }
 
     &__list {
@@ -96,6 +134,10 @@ $header-height: 64px;
         flex-direction: column;
         gap: 8px;
         text-transform: uppercase;
+
+        @include mixin.media('desktop') {
+            flex-direction: row;
+        }
     }
 
     &__link {
@@ -110,6 +152,11 @@ $header-height: 64px;
 
     &__registration {
         margin-top: 1.5em;
+
+        @include mixin.media('desktop') {
+            margin-top: 0;
+            margin-left: 24px;
+        }
     }
 }
 
@@ -128,6 +175,7 @@ $header-height: 64px;
 
         &__navigation {
             position: static;
+            height: auto;
             transition: opacity ease-out 1s;
             transform: none;
             opacity: 1;
