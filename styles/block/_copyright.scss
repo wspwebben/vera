@@ -23,11 +23,13 @@
     }
 
     &__text {
-        display: block;
-        margin-bottom: 16px;
-
-        &:last-child {
-            margin-bottom: 0;
+        @include mixin.media('tablet', 'to') {
+            display: block;
+            margin-bottom: 16px;
+    
+            &:last-child {
+                margin-bottom: 0;
+            }
         }
     }
 }

@@ -4,13 +4,13 @@
     background-color: #040404;
 
     &__container {
-        --padding: 32px;
+        --vertical-padding: 32px;
 
-        padding-top: var(--padding);
-        padding-bottom: var(--padding);
+        padding-top: var(--vertical-padding);
+        padding-bottom: var(--vertical-padding);
         
         @include mixin.media('tablet') {
-            --padding: 26px;
+            --vertical-padding: 26px;
 
             display: flex;
             align-items: center;
