@@ -10,6 +10,24 @@
         padding-bottom: 116px;
     }
 
+    @include mixin.media('desktop') {
+        padding-bottom: 156px;
+    }
+
+    &::before {
+        @include mixin.media('desktop') {
+            content: "";
+            position: absolute;
+            width: 370px;
+            height: 360px;
+            left: -37px;
+            top: 272px;
+            background-image: url('../images/desktop/triangle-repeated.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    }
+
     &::after {
         content: "";
         position: absolute;
@@ -30,6 +48,16 @@
             height: 120vh;
             max-height: 900px;
         }
+
+        @include mixin.media('desktop') {
+            width: 50%;
+            height: 105vh;
+
+            background-image: url('../images/desktop/hero.png');
+            background-position: left bottom;
+            background-size: cover;
+            
+        }
     }
 
     &__title {
@@ -37,6 +65,10 @@
 
         @include mixin.media('tablet') {
             margin-bottom: 120px;
+        }
+
+        @include mixin.media('desktop') {
+            margin-bottom: 92px;
         }
     }
 
@@ -54,6 +86,10 @@
 
         @include mixin.media('tablet') {
             font-size: 56px;
+        }
+
+        @include mixin.media('desktop') {
+            font-size: 106px;
         }
     }
 
@@ -89,7 +125,6 @@
     &__heading-text {
         @include mixin.media('tablet') {
             position: relative;
-
             
             &::before,
             &::after {
@@ -113,6 +148,14 @@
                 opacity: 0.2;
             }
         }
+
+        @include mixin.media('desktop') {
+            &::before,
+            &::after {
+                width: 278px;
+                height: 76px;
+            }
+        }
     }
 
     &__heading-shadow {
@@ -126,6 +169,16 @@
         -webkit-text-stroke: 1px;
     }
 
+    &__content {
+        @include mixin.media('tablet') {
+            max-width: 75%;
+        }
+
+        @include mixin.media('desktop') {
+            margin: 0 auto;
+        }
+    }
+
     &__text {
         font-weight: 500;
         font-size: 15px;
@@ -136,8 +189,7 @@
 
         @include mixin.media('tablet') {
             font-size: 18px;
-
-            max-width: 75%;
+            line-height: 2.2;
         }
     }
 
