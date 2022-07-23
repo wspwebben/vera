@@ -1,3 +1,4 @@
+@use '../variables';
 @use '../mixin';
 
 .contact-us {
@@ -10,13 +11,18 @@
         padding-bottom: 82px;
     }
 
+    @include mixin.media('desktop') {
+        padding-top: 192px;
+        padding-bottom: 222px;
+    }
+
     &__background {
 
         &::before {
             @include mixin.media('tablet') {
                 content: "";
                 position: absolute;
-                left: 650px;
+                right: -866px;
                 bottom: -405px;
                 width: 980px;
                 height: 1190px;
@@ -24,49 +30,60 @@
                 transform: rotate(42deg);
                 opacity: 0.8;
             }
+
+            @include mixin.media('desktop') {
+                right: calc((100vw - #{variables.$desktop}) / #{((variables.$desktop - variables.$laptop) / 1px)} * 240 - 290px);
+            }
         }
     }
 
     &__left-image {
-        &::before {
-            content: "";
-            position: absolute;
-            left: -740px;
-            bottom: -470px;
-            width: 980px;
-            height: 1190px;
-            background-image: url('../images/mobile/triangle-single.svg');
-            background-repeat: no-repeat;
-            background-size: cover;
-            opacity: 0.2;
-            transform: rotate(162deg);
-            
-            @include mixin.media('tablet') {
-                bottom: -160px;
-                left: -520px;
-            }
+        position: absolute;
+        z-index: -1;
+        left: -740px;
+        bottom: -470px;
+        width: 980px;
+        height: 1190px;
+        background-image: url('../images/mobile/triangle-single.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.2;
+        transform: rotate(162deg);
+        
+        @include mixin.media('tablet') {
+            left: auto;
+            bottom: -160px;
+            right: 300px;
+        }
+
+        @include mixin.media('desktop') {
+            bottom: -450px;
+            left: calc((100vw - #{variables.$desktop}) / #{((variables.$desktop - variables.$laptop) / 1px)} * 200);
+            background-image: url('../images/desktop/contact-us-left.png');
+            background-size: contain;
+            transform: none;
         }
     }
 
     &__center-image {
+        position: absolute;
+        right: -215px;
+        bottom: -470px;
+        width: 630px;
+        height: 620px;
+        background-image: url('../images/mobile/triangle-repeated.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.2;
 
-        &::before {
-            content: "";
-            position: absolute;
-            right: -215px;
-            bottom: -470px;
-            width: 630px;
-            height: 620px;
-            background-image: url('../images/mobile/triangle-repeated.svg');
-            background-repeat: no-repeat;
-            background-size: cover;
-            opacity: 0.2;
-
-            @include mixin.media('tablet') {
-                bottom: -160px;
-                left: 130px;
-                background-image: url('../images/tablet/contact-us/center.png');
-            }
+        @include mixin.media('tablet') {
+            bottom: -160px;
+            right: 0;
+        }
+        
+        @include mixin.media('desktop') {
+            right: calc((100vw - #{variables.$desktop}) / #{((variables.$desktop - variables.$laptop) / 1px)} * 240 + 583px);
+            background-image: url('../images/tablet/contact-us-center.png');
         }
     }
 
@@ -75,6 +92,10 @@
         
         @include mixin.media('tablet') {
             margin-bottom: 160px;
+        }
+
+        @include mixin.media('desktop') {
+            margin-bottom: 180px;
         }
     }
 
