@@ -1,4 +1,5 @@
 @use '../mixin';
+@use '../variables';
 
 .partnership {
     position: relative;
@@ -8,6 +9,10 @@
     @include mixin.media('tablet') {
         padding-top: 192px;
         padding-bottom: 80px;
+    }
+
+    @include mixin.media('desktop') {
+        --image-position: calc((100vw - #{variables.$desktop}) / #{((variables.$desktop - variables.$laptop) / 1px)} - 300px);
     }
     
     &::before {
@@ -28,11 +33,19 @@
             top: 90px;
             left: -130px;
         }
+
+        @include mixin.media('desktop') {
+            left: calc(var(--image-position) + 570px);
+            top: 100px;
+            width: 980px;
+            height: 1190px;
+        }
     }
 
-    @include mixin.media('tablet') {
-        &::after {
+    &::after {
+        @include mixin.media('tablet') {
             content: "";
+            z-index: -1;
             position: absolute;
             top: -180px;
             left: 620px;
@@ -43,6 +56,13 @@
             background-size: contain;
             transform: rotate(42deg);
             opacity: 0.1;
+        }
+
+        @include mixin.media('desktop') {
+            left: calc(var(--image-position) + 1220px);
+            top: -120px;
+            width: 980px;
+            height: 1190px;
         }
     }
 
@@ -56,17 +76,21 @@
             width: 980px;
             height: 1190px;
             background-image: url('../images/mobile/triangle-filled.svg');
-            transform: rotate(160deg);
+            transform: rotate(162deg);
             opacity: 0.05;
 
             @include mixin.media('tablet') {
                 left: -540px;
                 top: -340px;
             }
+
+            @include mixin.media('desktop') {
+                display: none;
+            }
         }
 
-        @include mixin.media('tablet') {
-            &::after {
+        &::after {
+            @include mixin.media('tablet') {
                 content: "";
                 position: absolute;
                 left: 0;
@@ -78,6 +102,22 @@
                 background-size: contain;
                 opacity: 0.3;
             }
+
+            @include mixin.media('desktop') {
+                content: none;
+            }
+        }
+        
+        @include mixin.media('desktop') {
+            position: absolute;
+            left: var(--image-position);
+            top: -200px;
+            width: 1030px; 
+            height: 1500px;
+            background-image: url('../images/desktop/partnership.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            opacity: 0.3;
         }
     }
 
