@@ -101,9 +101,15 @@
             width: 100%;
             height: calc(100vh - var(--header-height));
 
-            background-color: rgba(colors.$light-black, 0.8);
+            background-color: rgba(colors.$light-black, 0.95);
             transform: translateX(0);
             transition: transform 0.3s;
+            backdrop-filter: blur(10px);
+
+            @supports (backdrop-filter: none) {
+                background-color: rgba(colors.$light-black, 0.8);
+                backdrop-filter: blur(10px);
+            }
 
             &[aria-expanded=true] {
                 transform: translateX(100%);
