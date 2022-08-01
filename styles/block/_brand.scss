@@ -115,8 +115,4 @@
             margin-top: 52px;
         }
     }
-
-    &__secondary-action {
-        @include mixin.hideOnMobile;
-    }
 }

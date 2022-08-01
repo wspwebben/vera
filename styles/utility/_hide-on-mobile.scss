@@ -1,0 +1,7 @@
+@use '../mixin';
+
+.hide-on-mobile {
+    @include mixin.media('tablet', 'to') {
+        display: none !important;
+    }
+}
