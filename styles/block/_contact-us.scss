@@ -17,6 +17,7 @@
     }
 
     &__background {
+        pointer-events: none;
 
         &::before {
             @include mixin.media('tablet') {
