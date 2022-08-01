@@ -7,18 +7,35 @@ export function initHeaderMenu() {
         const wasOpen = navigation.ariaExpanded === 'true'
         
         if (wasOpen) {
-            navigation.ariaExpanded = 'false'
-            
-            button.ariaExpanded = 'false'
-            button.ariaLabel = 'Open menu'
+            closeMenu()
         } else {
-            navigation.ariaExpanded = 'true'
-
-            button.ariaExpanded = 'true'
-            button.ariaLabel = 'Close menu'
+            openMenu()
         }
     }
 
+    function closeMenuOnItemClick(event) {
+        if (event.target.tagName === 'A') {
+            closeMenu()
+        }
+    }
+
+    function openMenu() {
+        document.documentElement.classList.add('page--no-scroll')
+        navigation.ariaExpanded = 'true'
+
+        button.ariaExpanded = 'true'
+        button.ariaLabel = 'Close menu'
+    }
+
+    function closeMenu() {
+        document.documentElement.classList.remove('page--no-scroll')
+        navigation.ariaExpanded = 'false'
+            
+        button.ariaExpanded = 'false'
+        button.ariaLabel = 'Open menu'
+    }
+
     button.addEventListener('click', toggleMenu)
+    navigation.addEventListener('click', closeMenuOnItemClick)
     button.removeAttribute('hidden')
 }
