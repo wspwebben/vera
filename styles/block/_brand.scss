@@ -70,13 +70,19 @@
         }
 
         @include mixin.media('desktop') {
-            max-width: 530px;
+            max-width: 650px;
         }
     }
 
     &__converter-text {
         white-space: nowrap;
 
+        &--mobile-break {
+            @include mixin.media(400px, 'to') {
+                white-space: normal;
+            }
+        }
+        
         &:nth-child(1)::after,
         &:nth-child(2)::before {
             content: "";
