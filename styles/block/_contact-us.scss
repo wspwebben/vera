@@ -5,6 +5,7 @@
     position: relative;
     padding-top: 72px;
     padding-bottom: 110px;
+    overflow: hidden;
 
     @include mixin.media('tablet') {
         padding-top: 192px;
