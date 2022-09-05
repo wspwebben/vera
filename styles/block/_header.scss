@@ -156,10 +156,14 @@
         }
     }
 
-    &__registration {
+    &__sign {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
         margin-top: 1.5em;
-
+    
         @include mixin.media('desktop') {
+            flex-direction: row;
             margin-top: 0;
             margin-left: 24px;
         }
