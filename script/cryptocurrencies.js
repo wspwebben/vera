@@ -1,6 +1,10 @@
 import Glide, { Autoplay, Swipe, Breakpoints } from '@glidejs/glide/dist/glide.modular.esm'
 
 export function initCryptocurrenciesSlider() {
+    if (!document.querySelector('.glide')) {
+        return
+    }
+
     const biggerThanTablet = window.matchMedia('(min-width: 768px')
 
     if (biggerThanTablet.matches) {

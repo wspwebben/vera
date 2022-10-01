@@ -12,6 +12,10 @@
     padding: var(--vertical-padding) 0;
     background-color: rgba(colors.$light-black, 0.8);
 
+    &--static {
+        position: relative;
+    }
+
     @include mixin.media('tablet') {
         --header-height: 100px;
 
