@@ -1,6 +1,7 @@
 @use '../mixin';
 
 .hero {
+    overflow: hidden;
     position: relative;
     padding-top: 104px;
     padding-bottom: 64px;
