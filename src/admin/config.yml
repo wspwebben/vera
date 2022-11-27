@@ -1,0 +1,13 @@
+backend:
+  name: git-gateway
+  branch: ssg
+media_folder: "public/images"
+public_folder: "/images"
+collections:
+  - name: "partner"
+    label: "Partner"
+    create: true
+    fields: 
+      - { label: 'Name', name: 'name', widget: 'string' }
+      - { label: 'Link', name: 'link', widget: 'string' }
+      - { label: 'Image', name: 'image', widget: 'image' }
