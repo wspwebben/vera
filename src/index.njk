@@ -3,32 +3,7 @@ title: Vera Partners Crypto Casino Affiliate Program No.1
 layout: 'base.njk'
 ---
 
-  <header class="header js-header">
-    <div class="header__container container">
-      <a class="header__logo" href="/">
-        <img src="images/logo.svg" alt="Vera Casino">
-      </a>
-      <button type="button" class="header__menu-button js-header__menu-trigger" aria-expanded="false" aria-label="Open menu" hidden></button>
-      <nav class="header__navigation js-header__navigation">
-        <div class="header__navigation-container container">
-          <ul class="header__list">
-            <li class="header__item"><a class="header__link" href="#partnership">Partnership</a></li>
-            <li class="header__item"><a class="header__link" href="#brand">Brand</a></li>
-            <li class="header__item"><a class="header__link" href="#cryptocurrencies">Cryptocurrencies</a></li>
-            <li class="header__item"><a class="header__link" href="#contact-us">Contact us</a></li>
-          </ul>
-          <ul class="header__sign">
-            <li class="header__sign-item">
-              <a class="button button--outline button--small" href="https://backend.vera.partners/partner/login">Sign in</a>
-            </li>
-            <li class="header__sign-item">
-              <a class="button button--outline button--small" href="https://backend.vera.partners/partner/register">Sign up</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </div>
-  </header>
+  {% include 'header.njk' %}
   <main class="page__content">
     <section class="hero">
       <div class="hero__container container">
@@ -167,22 +142,4 @@ layout: 'base.njk'
       </div>
     </section>
   </main>
-  <footer class="footer">
-    <div class="footer__container container">
-      <a class="footer__logo" href="/">
-        <img src="images/logo.svg" alt="Vera Casino">
-      </a>
-      <nav class="footer__navigation">
-        <ul class="footer__list">
-          <li class="footer__item"><a class="footer__link" href="/terms.html">Affiliate agreement</a></li>
-          <li class="footer__item"><a class="footer__link" href="/terms.html">Privacy policy</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div class="copyright">
-      <div class="copyright__container container">
-        <span class="copyright__text">vera.partners</span>
-        <span class="copyright__text">© copyright. All rights reserved.</span>
-      </div>
-    </div>
-  </footer>
+  {% include 'footer.njk' %}
