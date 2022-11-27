@@ -6,6 +6,8 @@ public_folder: "/images"
 collections:
   - name: "partner"
     label: "Partner"
+    folder: "src/partners"
+    slug: "{{slug}}"
     create: true
     fields: 
       - { label: 'Name', name: 'name', widget: 'string' }
