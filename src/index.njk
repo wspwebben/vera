@@ -1,52 +1,9 @@
-<!DOCTYPE html>
-<html class="page no-js" lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vera Partners Crypto Casino Affiliate Program No.1</title>
-  <style>
-    html {
-      background-color: #070707;
-      color: #f0f6fb;
-    }
+---
+title: Vera Partners Crypto Casino Affiliate Program No.1
+layout: 'base.njk'
+---
 
-    a {
-      color: inherit;
-    }
-  </style>
-  <link rel="stylesheet" href="styles/index.scss">
-  <link rel="manifest" href="/manifest.webmanifest">
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" href="/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-</head>
-<body class="page__body">
-  <header class="header js-header">
-    <div class="header__container container">
-      <a class="header__logo" href="/">
-        <img src="images/logo.svg" alt="Vera Casino">
-      </a>
-      <button type="button" class="header__menu-button js-header__menu-trigger" aria-expanded="false" aria-label="Open menu" hidden></button>
-      <nav class="header__navigation js-header__navigation">
-        <div class="header__navigation-container container">
-          <ul class="header__list">
-            <li class="header__item"><a class="header__link" href="#partnership">Partnership</a></li>
-            <li class="header__item"><a class="header__link" href="#brand">Brand</a></li>
-            <li class="header__item"><a class="header__link" href="#cryptocurrencies">Cryptocurrencies</a></li>
-            <li class="header__item"><a class="header__link" href="#contact-us">Contact us</a></li>
-          </ul>
-          <ul class="header__sign">
-            <li class="header__sign-item">
-              <a class="button button--outline button--small" href="https://backend.vera.partners/partner/login">Sign in</a>
-            </li>
-            <li class="header__sign-item">
-              <a class="button button--outline button--small" href="https://backend.vera.partners/partner/register">Sign up</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </div>
-  </header>
+  {% include 'header.njk' %}
   <main class="page__content">
     <section class="hero">
       <div class="hero__container container">
@@ -72,21 +29,21 @@
           <ul class="partnership__list">
             <li class="partnership__item">
               <div class="partnership__image-wrapper">
-                <img src="./images/partnership/price.svg" alt="" class="partnership__image" width="100" height="100">
+                <img src="/images/partnership/price.svg" alt="" class="partnership__image" width="100" height="100">
               </div>
               <h3 class="partnership__item-title">Good traffic</h3>
               <span class="partnership__item-accent">Good price</span>
             </li>
             <li class="partnership__item">
               <div class="partnership__image-wrapper">
-                <img src="./images/partnership/share.svg" alt="" class="partnership__image" width="100" height="100">
+                <img src="/images/partnership/share.svg" alt="" class="partnership__image" width="100" height="100">
               </div>
               <h3 class="partnership__item-title">Revenue share</h3>
               <span class="partnership__item-accent">Up to 50%</span>
             </li>
             <li class="partnership__item">
               <div class="partnership__image-wrapper">
-                <img src="./images/partnership/partner.svg" alt="" class="partnership__image" width="100" height="100">
+                <img src="/images/partnership/partner.svg" alt="" class="partnership__image" width="100" height="100">
               </div>
               <h3 class="partnership__item-title">Special conditions for</h3>
               <span class="partnership__item-accent">Special partner</span>
@@ -101,7 +58,7 @@
       <div class="container">
         <h2 class="brand__title section-title">Brand information</h2>
         <div class="brand__content">
-          <img class="brand__logo" src="images/logo-wide.svg" alt="veracasino logo">
+          <img class="brand__logo" src="/images/logo-wide.svg" alt="veracasino logo">
           <p class="brand__text">
             Online crypto casino from gambling leaders and crypto experts. Guaranteed anonymity. Fast and reliable payouts.
             High conversion rate on crypto traffic. Distinctive bonus program. Verification as an optional process. 
@@ -125,23 +82,23 @@
             <div class="glide__track" data-glide-el="track">
               <ul class="cryptocurrencies__coins glide__slides">
                 <li class="cryptocurrencies__coin glide__slide">
-                  <img class="cryptocurrencies__image" src="images/coins/btc.svg" alt="" width="50" height="50">
+                  <img class="cryptocurrencies__image" src="/images/coins/btc.svg" alt="" width="50" height="50">
                   <span class="cryptocurrencies__caption">BTC</span>
                 </li>
                 <li class="cryptocurrencies__coin glide__slide">
-                  <img class="cryptocurrencies__image" src="images/coins/ltc.svg" alt="" width="50" height="50">
+                  <img class="cryptocurrencies__image" src="/images/coins/ltc.svg" alt="" width="50" height="50">
                   <span class="cryptocurrencies__caption">LTC</span>
                 </li>
                 <li class="cryptocurrencies__coin glide__slide">
-                  <img class="cryptocurrencies__image" src="images/coins/usdt.svg" alt="" width="50" height="50">
+                  <img class="cryptocurrencies__image" src="/images/coins/usdt.svg" alt="" width="50" height="50">
                   <span class="cryptocurrencies__caption">USDT</span>
                 </li>
                 <li class="cryptocurrencies__coin glide__slide">
-                  <img class="cryptocurrencies__image" src="images/coins/eth.svg" alt="" width="50" height="50">
+                  <img class="cryptocurrencies__image" src="/images/coins/eth.svg" alt="" width="50" height="50">
                   <span class="cryptocurrencies__caption">ETH</span>
                 </li>
                 <li class="cryptocurrencies__coin glide__slide">
-                  <img class="cryptocurrencies__image" src="images/coins/xrp.svg" alt="" width="50" height="50">
+                  <img class="cryptocurrencies__image" src="/images/coins/xrp.svg" alt="" width="50" height="50">
                   <span class="cryptocurrencies__caption">XRP</span>
                 </li>
               </ul>
@@ -161,21 +118,21 @@
         <h2 class="contact-us__title section-title">Contact us</h2>
         <dl class="contact-us__list">
           <a class="contact-us__item" href="https://t.me/vera_partners" target="_blank">
-            <img class="contact-us__icon" alt="" src="images/icons/telegram.svg">
+            <img class="contact-us__icon" alt="" src="/images/icons/telegram.svg">
             <dt class="contact-us__caption">Telegram</dt>
             <dd class="contact-us__contact">
               <span class="contact-us__link">@vera.partners</span>
             </dd>
           </a>
           <a class="contact-us__item" href="mailto:support@vera.partners" target="_blank">
-            <img class="contact-us__icon" alt="" src="images/icons/email.svg">
+            <img class="contact-us__icon" alt="" src="/images/icons/email.svg">
             <dt class="contact-us__caption">Email</dt>
             <dd class="contact-us__contact">
               <span class="contact-us__link">support@vera.partners</span>
             </dd>
           </a>
           <a class="contact-us__item" href="https://join.skype.com/invite/zNpTiJlqbB5e" target="_blank">
-            <img class="contact-us__icon" alt="" src="images/icons/skype.svg">
+            <img class="contact-us__icon" alt="" src="/images/icons/skype.svg">
             <dt class="contact-us__caption">Skype</dt>
             <dd class="contact-us__contact">
               <span class="contact-us__link">@vera.partners</span>
@@ -185,25 +142,4 @@
       </div>
     </section>
   </main>
-  <footer class="footer">
-    <div class="footer__container container">
-      <a class="footer__logo" href="/">
-        <img src="images/logo.svg" alt="Vera Casino">
-      </a>
-      <nav class="footer__navigation">
-        <ul class="footer__list">
-          <li class="footer__item"><a class="footer__link" href="/terms.html">Affiliate agreement</a></li>
-          <li class="footer__item"><a class="footer__link" href="/terms.html">Privacy policy</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div class="copyright">
-      <div class="copyright__container container">
-        <span class="copyright__text">vera.partners</span>
-        <span class="copyright__text">© copyright. All rights reserved.</span>
-      </div>
-    </div>
-  </footer>
-  <script src="script/main.js"></script>
-</body>
-</html>
+  {% include 'footer.njk' %}

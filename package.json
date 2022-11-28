@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "parcel *.html",
-    "build": "parcel build *.html"
+    "start": "eleventy --serve",
+    "build": "eleventy"
   },
   "repository": {
     "type": "git",
@@ -22,5 +22,8 @@
     "@glidejs/glide": "^3.5.2",
     "parcel-bundler": "^1.12.4",
     "sass": "^1.32.4"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.2"
   }
 }
