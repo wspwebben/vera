@@ -147,7 +147,7 @@ svg {
     width: 88px;
     height: 16px;
     margin-left: 12px;
-    background-image: url("/section-title.415a28ce.svg");
+    background-image: url("/images/mobile/section-title.svg");
     background-repeat: no-repeat;
     background-size: contain;
   }
@@ -163,7 +163,7 @@ svg {
     width: 168px;
     height: 16px;
     margin-right: 12px;
-    background-image: url("/section-title.c8c6ee5f.svg");
+    background-image: url("/images/tablet/section-title.svg");
     background-repeat: no-repeat;
     background-size: contain;
   }
@@ -189,7 +189,7 @@ svg {
   position: absolute;
   width: 88px;
   height: 16px;
-  background-image: url("/section-title-center.ab925bf4.svg");
+  background-image: url("/images/mobile/section-title-center.svg");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -431,7 +431,7 @@ svg {
     height: 360px;
     left: -37px;
     top: 272px;
-    background-image: url("/triangle-repeated.267650df.svg");
+    background-image: url("/images/desktop/triangle-repeated.svg");
     background-repeat: no-repeat;
     background-size: contain;
   }
@@ -446,7 +446,7 @@ svg {
   height: 105vh;
   max-height: 675px;
   pointer-events: none;
-  background-image: url("/hero.402a2dff.png");
+  background-image: url("/images/mobile/hero.png");
   background-repeat: no-repeat;
   background-position: right;
   background-size: contain;
@@ -461,7 +461,7 @@ svg {
   .hero::after {
     width: 50%;
     height: 105vh;
-    background-image: url("/hero.fdadfb6e.png");
+    background-image: url("/images/desktop/hero.png");
     background-position: left bottom;
     background-size: cover;
   }
@@ -512,7 +512,7 @@ svg {
     vertical-align: middle;
     width: 83px;
     height: 26px;
-    background-image: url("/hero-heading.341b8a60.svg");
+    background-image: url("/images/mobile/hero-heading.svg");
     background-repeat: no-repeat;
     background-size: contain;
   }
@@ -541,7 +541,7 @@ svg {
     margin-left: 10px;
     width: 153px;
     height: 42px;
-    background-image: url("/hero-heading.ca377492.svg");
+    background-image: url("/images/tablet/hero-heading.svg");
     background-size: contain;
     background-repeat: no-repeat;
   }
@@ -627,7 +627,7 @@ svg {
   left: -450px;
   width: 1190px;
   height: 1430px;
-  background-image: url("/triangle-single.ccf8dc1a.svg");
+  background-image: url("/images/mobile/triangle-single.svg");
   background-repeat: no-repeat;
   background-size: contain;
   pointer-events: none;
@@ -660,7 +660,7 @@ svg {
     left: 620px;
     width: 1190px;
     height: 1430px;
-    background-image: url("/triangle-single.ccf8dc1a.svg");
+    background-image: url("/images/mobile/triangle-single.svg");
     background-repeat: no-repeat;
     background-size: contain;
     transform: rotate(42deg);
@@ -685,7 +685,7 @@ svg {
   left: -850px;
   width: 980px;
   height: 1190px;
-  background-image: url("/triangle-filled.c86cf170.svg");
+  background-image: url("/images/mobile/triangle-filled.svg");
   transform: rotate(162deg);
   opacity: 0.05;
 }
@@ -708,7 +708,7 @@ svg {
     top: 60px;
     width: 250px;
     height: 500px;
-    background-image: url("/partnership.b7d37878.png");
+    background-image: url("/images/tablet/partnership.png");
     background-repeat: no-repeat;
     background-size: contain;
     opacity: 0.3;
@@ -726,7 +726,7 @@ svg {
     top: -200px;
     width: 1030px;
     height: 1500px;
-    background-image: url("/partnership.8a9a8fe9.png");
+    background-image: url("/images/desktop/partnership.png");
     background-repeat: no-repeat;
     background-size: contain;
     opacity: 0.3;
@@ -774,7 +774,7 @@ svg {
   left: 0;
   width: var(--partnership-image-bg-size);
   height: var(--partnership-image-bg-size);
-  background-image: url("/item-bg.9c572084.png");
+  background-image: url("/images/item-bg.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -823,7 +823,7 @@ svg {
   right: 0;
   width: 320px;
   height: 640px;
-  background-image: url("/brand.b7dcc138.png");
+  background-image: url("/images/mobile/brand.png");
   background-size: contain;
   background-position: right center;
   background-repeat: no-repeat;
@@ -833,7 +833,7 @@ svg {
     bottom: -250px;
     width: 600px;
     height: 1150px;
-    background-image: url("/brand.690eb962.png");
+    background-image: url("/images/tablet/brand.png");
   }
 }
 @media (min-width: 1080px) {
@@ -842,7 +842,7 @@ svg {
     bottom: -350px;
     width: 1000px;
     height: 1200px;
-    background-image: url("/brand.79094a21.png");
+    background-image: url("/images/desktop/brand.png");
   }
 }
 .brand__title {
@@ -891,7 +891,7 @@ svg {
   display: inline-block;
   width: 60px;
   height: 12px;
-  background-image: url("/converter-arrow.885fff2a.svg");
+  background-image: url("/images/mobile/converter-arrow.svg");
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -909,7 +909,7 @@ svg {
 }
 @media (min-width: 1080px) {
   .brand__converter-text:nth-child(2)::before {
-    background-image: url("/converter-arrow.e6934398.svg");
+    background-image: url("/images/desktop/converter-arrow.svg");
   }
 }
 .brand__actions {
@@ -1158,7 +1158,7 @@ svg {
     bottom: -405px;
     width: 980px;
     height: 1190px;
-    background-image: url("/triangle-colored.3392a367.svg");
+    background-image: url("/images/tablet/triangle-colored.svg");
     transform: rotate(42deg);
     opacity: 0.8;
   }
@@ -1175,7 +1175,7 @@ svg {
   bottom: -470px;
   width: 980px;
   height: 1190px;
-  background-image: url("/triangle-single.ccf8dc1a.svg");
+  background-image: url("/images/mobile/triangle-single.svg");
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.2;
@@ -1192,7 +1192,7 @@ svg {
   .contact-us__left-image {
     bottom: -450px;
     left: calc((100vw - 1920px) / 480 * 200);
-    background-image: url("/contact-us-left.2765a43d.png");
+    background-image: url("/images/desktop/contact-us-left.png");
     background-size: contain;
     transform: none;
   }
@@ -1203,7 +1203,7 @@ svg {
   bottom: -470px;
   width: 630px;
   height: 620px;
-  background-image: url("/triangle-repeated.430459b9.svg");
+  background-image: url("/images/mobile/triangle-repeated.svg");
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.2;
@@ -1217,7 +1217,7 @@ svg {
 @media (min-width: 1080px) {
   .contact-us__center-image {
     right: calc((100vw - 1920px) / 480 * 240 + 583px);
-    background-image: url("/contact-us-center.8022a426.png");
+    background-image: url("/images/tablet/contact-us-center.png");
   }
 }
 .contact-us__title {
