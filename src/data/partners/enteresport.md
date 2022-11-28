@@ -1,5 +1,5 @@
 ---
 name: Enter Esport
 link: https://enteresport.com/
-image: /images/partners/enter-esport.png
+image: /uploads/partners/enter-esport.png
 ---

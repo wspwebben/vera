@@ -1,5 +1,5 @@
 ---
 name: Finixio
 link: https://finixio.com/
-image: /images/partners/finixio.svg
+image: /uploads/partners/finixio.svg
 ---
