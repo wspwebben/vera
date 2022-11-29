@@ -774,7 +774,7 @@ svg {
   left: 0;
   width: var(--partnership-image-bg-size);
   height: var(--partnership-image-bg-size);
-  background-image: url("/images/item-bg.png");
+  background-image: url("/images/partnership/item-bg.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -1487,5 +1487,3 @@ svg {
     margin-bottom: 56px;
   }
 }
-
-/*# sourceMappingURL=/styles.434540e1.css.map */
