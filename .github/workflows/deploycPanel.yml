@@ -8,10 +8,22 @@ jobs:
     name: FTP-Deploy-Action
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2.1.0
+    - name: Get Latest Code
+      uses: actions/checkout@v2.1.0
       with:
         fetch-depth: 2
-    - name: FTP-Deploy-Action
+
+    - name: Use Node
+      uses: actions/setup-node@v2
+      with:
+        node-version: '16'
+
+    - name: Build Project
+      run: |
+        npm install
+        npm run build
+    
+    - name: Deploy 
       uses: SamKirkland/FTP-Deploy-Action@3.1.1
       with:
         ftp-server: ${{ secrets.FTP_SERVER }}
