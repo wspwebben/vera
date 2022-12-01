@@ -1,4 +1,5 @@
 module.exports = function(eleventyConfig) {
+    eleventyConfig.addPassthroughCopy('./src/.cpanel.yml')
     eleventyConfig.addPassthroughCopy('./src/styles.css')
     eleventyConfig.addPassthroughCopy('./src/script.js')
     eleventyConfig.addPassthroughCopy('./src/images')
