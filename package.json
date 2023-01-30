@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "eleventy --serve",
-    "build": "eleventy",
-    "build-admin": "ADMIN_PANEL=true eleventy"
+    "start": "ENV=dev eleventy --serve",
+    "build": "ENV=prod eleventy",
+    "build:stage": "ENV=stage eleventy"
   },
   "repository": {
     "type": "git",

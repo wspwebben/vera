@@ -8,7 +8,9 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy('./src/fonts')
     eleventyConfig.addPassthroughCopy({ './src/favicon': '/' })
     
-    if(process.env.ADMIN_PANEL) {
+    if(process.env.ENV === 'prod') {
+        eleventyConfig.ignores.add('./src/admin/**');
+    } else {
         eleventyConfig.addPassthroughCopy('./src/admin')
     }
 
