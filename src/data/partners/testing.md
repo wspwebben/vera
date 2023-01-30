@@ -1,5 +1,5 @@
 ---
 name: Testing
 link: google.com
-image: /shkek.webp
+image: /src/uploads/partners/oncasitown.png
 ---
