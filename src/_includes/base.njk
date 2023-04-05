@@ -27,6 +27,7 @@
 <body class="page__body">
   {{ content | safe}}
 
+  {% if global.env !== 'prod' %}
   <script>
   if (window.netlifyIdentity) {
     window.netlifyIdentity.on("init", user => {
@@ -37,6 +38,7 @@
       }
     });
   }
+  {% endif %}
 </script>
 <script src="/script.js"></script>
 </body>
