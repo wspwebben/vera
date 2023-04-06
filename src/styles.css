@@ -1439,6 +1439,7 @@ svg {
   background-color: currentColor;
 }
 
+
 .partners-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -1446,10 +1447,11 @@ svg {
 }
 .partners-list__link {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100%;
-  padding: 1.5em 3em;
+  padding: 1.5em;
   border-radius: 10px;
   border: 1px solid #e64cff;
   transition: border-color 0.5s;
@@ -1462,11 +1464,20 @@ svg {
 .partners-list__link:hover .partners-list__image, .partners-list__link:focus .partners-list__image {
   transform: scale(1.15);
 }
+.partners-list__image-wrapper {
+  padding: 0 1.5em;
+}
 .partners-list__image {
   transition: transform ease-in-out 0.5s;
-  height: 100%;
   min-height: 100px;
   object-fit: contain;
+  padding: 0 1.5em;
+}
+.partners-list__description {
+  margin-top: 0.5em;
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 10px;
 }
 
 .page-terms {
