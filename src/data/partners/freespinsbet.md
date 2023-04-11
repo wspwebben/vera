@@ -7,5 +7,5 @@ description: If you are looking for an honest affiliate partner with timely
   Last but not least, they always give us what we want, ranging from exclusive
   marketing materials and deals to professional advice. We have no doubt that
   they are worth our recommendation to others.
-image: /uploads/partners/freespinsbet.png
+image: /uploads/partners/freespinsbet.com-logo.png
 ---
