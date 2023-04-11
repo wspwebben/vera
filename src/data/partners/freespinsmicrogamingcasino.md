@@ -6,5 +6,5 @@ description: Vera Partners makes our life easier and happier! With their
   VIP promotions like no others! In addition, they offer a very decent
   commission plan with quick payments. In conclusion, big applause for the Just
   Affiliates team from our “FSMC” family.
-image: /uploads/partners/freespinsmicrogamingcasino.com-logo.png
+image: /uploads/partners/freespinsmicrogaming.com-logo.png
 ---
