@@ -6,5 +6,5 @@ description: Since we joined Vera Partners everything have been working very
   exclusive deals, fast payments, and prime support, we can blindly recommend
   this website for all affiliates. If we had to rate our partnership with them
   it would be 5/5 in golden stars!
-image: /uploads/partners/freespins1.png
+image: /uploads/partners/freespins1.com-logo.png
 ---
