@@ -7,5 +7,5 @@ description: For us, Vera Partners is one the best affiliate programmes in the
   but we can also give our visitors exclusive bonuses and free spins. Taking
   into account the above, we would honestly recommend Vera to everyone who want
   to earn big money with little effort.
-image: /uploads/partners/microgaming-spins.png
+image: /uploads/partners/microgamingspins.com-logo.png
 ---
