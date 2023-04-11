@@ -6,5 +6,5 @@ description: We are very excited to be working with Vera Partners. Their team
   content. As for their online casinos, they are very strong, with some
   excellent offers for both new and existing players. We’re very much looking
   forward to a profitable partnership.
-image: /uploads/partners/freespinsnetentcasino.png
+image: /uploads/partners/freespinsnetentcasino.com-logo.png
 ---
