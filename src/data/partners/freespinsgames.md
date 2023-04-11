@@ -6,5 +6,5 @@ description: Vera Partners is a good example of how the best casino partners
   very kind and helpful, and we are sure that our cooperation will be long and
   fruitful. Besides, dealing with the them has given our business a huge kick
   and motivation for further work. Keep it up!
-image: /uploads/partners/freespinsgames.png
+image: /uploads/partners/freespinsgames.com-logo.png
 ---
